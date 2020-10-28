@@ -14,7 +14,7 @@ var milesPerKilometer = 0.621;
 // let hoursToMars: number=milesToMars/speedMph;
 // let daysToMars: number=hoursToMars/24;
 // // Code an output statement here (use a template literal):
-// // console.log(`${spacecraftName} will take ${daysToMars} days to reach Mars.`);
+// console.log(`${spacecraftName} will take ${daysToMars} days to reach Mars.`);
 // // Part 3: Create a Function ("getDaysToLocation")
 // function getDaysToLocation(kilometersAway: number): number {
 //     let speedMph: number = 17500;
@@ -22,9 +22,9 @@ var milesPerKilometer = 0.621;
 //     let hoursAway: number = milesAway/speedMph;
 //     let daysAway: number = hoursAway/24;
 //     return daysAway;
+// //  n.b. could also just "return hoursAway/24" instead of lines 25 and 26
 // };
-// // Move your output statement from part 2 here. Update the template literal to call
-// // the function and print the outputs for a Mars trip and a moon trip.
+// // Move your output statement from part 2 here. Update the template literal to call the function and print the outputs for a Mars trip and a moon trip.
 // console.log(`${spacecraftName} will take ${getDaysToLocation(kilometersToMars)} days to reach Mars.`);
 // console.log(`${spacecraftName} will take ${getDaysToLocation(kilometersToTheMoon)} days to reach the Moon.`);
 // Part 4: Create a Spacecraft Class
@@ -51,12 +51,11 @@ var Spacecraft = /** @class */ (function () {
 ;
 // Create an instance of the class here:
 var spaceShuttle = new Spacecraft('Determination', 17500);
-// Move your output statements from part 3 here. Update the template literals use the
-// instance of the class.
+// Move your output statements from part 3 here. Update the template literals use the instance of the class.
 // console.log(`${spaceShuttle.name} will take ${spaceShuttle.getDaysToLocation(kilometersToMars)} to get to Mars.`);
 // console.log(`${spaceShuttle.name} will take ${spaceShuttle.getDaysToLocation(kilometersToTheMoon)} to get to the Moon.`);
 // Part 5: Export and Import the SpaceLocation Class
-// Add the required import statement BEFORE the part 1 content.
+// Add the required import statement BEFORE the part 1 content (see line 4 above).
 // Add the printDaysToLocation function to the Spacecraft class.
 spaceShuttle.printDaysToLocation(new SpaceLocation_1.SpaceLocation('Mars', kilometersToMars));
 spaceShuttle.printDaysToLocation(new SpaceLocation_1.SpaceLocation('the Moon', kilometersToTheMoon));

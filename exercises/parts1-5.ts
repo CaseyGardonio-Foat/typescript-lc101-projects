@@ -24,6 +24,7 @@ let milesPerKilometer: number=0.621;
 //     let hoursAway: number = milesAway/speedMph;
 //     let daysAway: number = hoursAway/24;
 //     return daysAway;
+// //  n.b. could also just "return hoursAway/24" instead of lines 25 and 26
 // };
 
 // // Move your output statement from part 2 here. Update the template literal to call the function and print the outputs for a Mars trip and a moon trip.
@@ -45,7 +46,7 @@ class Spacecraft {
         let daysAway: number = hoursAway/24;
         return daysAway;
     };
-    printDaysToLocation(location: SpaceLocation) {
+    printDaysToLocation(location: SpaceLocation): void {
         console.log(`${this.name} would take ${this.getDaysToLocation(location.kilometersAway)} days to get to ${location.name}.`);
     };
 };
